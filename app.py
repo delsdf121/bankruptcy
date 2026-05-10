@@ -28,7 +28,7 @@ def register_cyrillic_fonts():
     font_paths = [
         "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
         "/usr/share/fonts/dejavu/DejaVuSans.ttf",
-        "C:/Windows/Fonts/arial.ttf",
+        "arial.ttf",
         "/System/Library/Fonts/Supplemental/Arial.ttf",
     ]
     for path in font_paths:
@@ -942,7 +942,7 @@ with tab1:
 
     sample_companies = {
         "7707083893": {
-            "name": "ПАО Газпром Межрегионгаз Иваново",
+            "name": "ООО Газпром Межрегионгаз Иваново",
             "industry": "Торговля",
             "ta": 3850000000, "tl": 2680000000, "wc": 1120000000,
             "sales": 12850000000, "ebit": 480000000, "re": 1050000000,
@@ -1232,7 +1232,7 @@ with tab2:
                                      "Транспорт", "Другая"], key="compare_industry")
 
     sample_companies = {
-        "7707083893": {"name": "ПАО Газпром Межрегионгаз Иваново", "ta": 3850000000, "tl": 2680000000, "wc": 1120000000,
+        "7707083893": {"name": "ООО Газпром Межрегионгаз Иваново", "ta": 3850000000, "tl": 2680000000, "wc": 1120000000,
                        "sales": 12850000000, "ebit": 480000000, "re": 1050000000, "pbt": 265000000, "mv": 4200000000,
                        "bv": 2680000000, "cl": 1450000000, "ca": 2570000000, "equity": 1170000000,
                        "cred_debt": 1820000000,
