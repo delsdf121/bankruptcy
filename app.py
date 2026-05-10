@@ -855,14 +855,14 @@ def generate_pdf_report(company_name, inn, model_choice, res, current_data, fore
         story.append(t_forecast)
 
     story.append(Spacer(1, 30))
-    story.append(Paragraph("Отчёт подготовлен системой <b>Прогнозирование банкроства</b>", normal_style))
+    story.append(Paragraph("Отчёт подготовлен системой <b>Прогнозирование банкротства</b>", normal_style))
 
     doc.build(story)
     buffer.seek(0)
     return buffer
 
 
-st.set_page_config(page_title="Прогнозирование банкроства", layout="wide", page_icon="📊")
+st.set_page_config(page_title="Прогнозирование банкротства", layout="wide", page_icon="📊")
 
 conn = sqlite3.connect('reports.db', check_same_thread=False)
 c = conn.cursor()
@@ -920,7 +920,7 @@ def login():
 
 
 if not st.session_state.authenticated:
-    st.title("📊 Прогнозирование банкроства")
+    st.title("📊 Прогнозирование банкротства")
     tab_login, tab_reg = st.tabs(["Вход", "Регистрация"])
     with tab_login:
         login()
